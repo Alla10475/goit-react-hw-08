@@ -4,13 +4,13 @@ import css from './ContactForm.module.css';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import * as yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/operations';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = (value, actions) => {
-    dispatch(addContact(value));
+  const handleSubmit = (data, actions) => {
+    dispatch(addContact(data));
     actions.resetForm();
   };
 
