@@ -8,6 +8,17 @@ import ContactList from "../components/ContactList/ContactList";
 import { useDispatch } from 'react-redux';
 // import { selectError, selectIsLoading } from '../redux/contacts/selectors';
 
+const styles = {
+    container: {
+    //   backgroundColor: '#e1b1e1',
+    paddingTop: '200px',
+    paddingRight: '140px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+};
+
 export default function Contacts() {
   const dispatch = useDispatch();
 //   const isLoading = useSelector(selectIsLoading);
@@ -18,7 +29,7 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div className="container">
+    <div style={styles.container}>
       <DocumentTitle>Phonebook</DocumentTitle>
       <div className="mainContactForm">
         <ContactForm />

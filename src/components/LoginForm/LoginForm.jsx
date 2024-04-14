@@ -35,7 +35,7 @@ const LoginForm = ({ onLogin }) => {
         <label className={css.label}>
           <span className={css.labelText}>Email:</span>
           <Field
-            className={css.formInput}
+            className={css.field}
             placeholder="alex@patron.com"
             type="text"
             name="email"
@@ -49,7 +49,7 @@ const LoginForm = ({ onLogin }) => {
         <label className={css.label}>
           <span className={css.labelText}>Password:</span>
           <Field
-            className={css.formInput}
+            className={css.field}
             placeholder="Enter your password"
             type="password"
             name="password"
@@ -62,7 +62,7 @@ const LoginForm = ({ onLogin }) => {
         </label>
 
         <button
-          className={css.submitBtn}
+          className={css.signInBtn}
           type="submit"
           title="Click to register user"
           aria-label="Add new mailbox"
