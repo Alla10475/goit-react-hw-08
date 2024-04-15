@@ -23,8 +23,10 @@
 }
 
 .active {
-  /* color: yellow; */
+  color: yellow;
   font-weight: bold;
-  background-color: yellow
+  /* background-color: yellow; */
+  border-top: 3px solid white;
+  border-left: 3px solid white;
  
 }

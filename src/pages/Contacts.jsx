@@ -9,14 +9,19 @@ import { useDispatch } from 'react-redux';
 // import { selectError, selectIsLoading } from '../redux/contacts/selectors';
 
 const styles = {
-    container: {
-    //   backgroundColor: '#e1b1e1',
-    paddingTop: '200px',
-    paddingRight: '140px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-  },
+  container: {
+    height: '100vh',
+    paddingTop: '110px',
+    paddingRight: '40px',
+    // display: 'flex',
+    paddingLeft: '40px',
+        // alignItems: 'center',
+    backgroundColor: '#ad70e5',
+    },
+    formWrap: {
+        display: 'flex',
+        marginBottom: '50px',
+    }
 };
 
 export default function Contacts() {
@@ -31,7 +36,7 @@ export default function Contacts() {
   return (
     <div style={styles.container}>
       <DocumentTitle>Phonebook</DocumentTitle>
-      <div className="mainContactForm">
+      <div style={styles.formWrap}>
         <ContactForm />
         <SearchBox />
       </div>

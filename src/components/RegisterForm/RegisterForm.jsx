@@ -6,7 +6,7 @@ import * as yup from 'yup';
 const RegisterForm = ({onRegister}) => {
 
   const handleSubmit = (data, formActions) => {
-    onRegister(data);
+      onRegister(data);
     formActions.resetForm();
   };
 

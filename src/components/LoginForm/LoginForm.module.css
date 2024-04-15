@@ -10,8 +10,8 @@
 }
 
 .formTitle {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
 
 .label {
@@ -21,7 +21,7 @@
 }
 
 .field {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
   border-right: 2px solid black;
   border-top: 2px solid white;
   border-left: 2px solid white;
@@ -40,7 +40,6 @@
   height: 50px;
 }
 
-.errorMsg {
-  color: red;
-  color: #e1b1e1;
+.errorMessage {
+  color: rgb(210, 26, 26);
 }

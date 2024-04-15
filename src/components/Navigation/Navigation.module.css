@@ -19,9 +19,9 @@
 }
 
 .active {
-  color: yellow;
+  color: #ffff00;
   font-weight: bold;
-  border-right: 2px solid yellow;
+  border-right: 2px solid #ffff00;
   border-bottom: 2px solid yellow;
   border-top: 2px solid white;
   border-left: 2px solid white;
