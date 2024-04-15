@@ -5,17 +5,16 @@ import DocumentTitle from "../components/DocumentTitle";
 import SearchBox from "../components/SearchBox/SearchBox";
 import { fetchContacts } from "../redux/contacts/operations";
 import ContactList from "../components/ContactList/ContactList";
-import { useDispatch } from 'react-redux';
-// import { selectError, selectIsLoading } from '../redux/contacts/selectors';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectError, selectLoading } from '../redux/contacts/selectors';
+import Loader from "../components/Loader/Loader";
 
 const styles = {
   container: {
     height: '100vh',
     paddingTop: '110px',
     paddingRight: '40px',
-    // display: 'flex',
     paddingLeft: '40px',
-        // alignItems: 'center',
     backgroundColor: '#ad70e5',
     },
     formWrap: {
@@ -26,8 +25,8 @@ const styles = {
 
 export default function Contacts() {
   const dispatch = useDispatch();
-//   const isLoading = useSelector(selectIsLoading);
-//   const error = useSelector(selectError);
+  const isLoading = useSelector(selectLoading);
+  const error = useSelector(selectError);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -40,13 +39,13 @@ export default function Contacts() {
         <ContactForm />
         <SearchBox />
       </div>
-      {/* {isLoading && !error && <Loader />}
+      {isLoading && !error && <Loader />}
       {error && (
         <b>
-          There is a problem with the connection to the server, please try again
+          Something wrong, please try again
           later
         </b>
-      )} */}
+      )}
       <ContactList />
     </div>
   );

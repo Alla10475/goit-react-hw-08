@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   padding: 20px;
-  width: 760px;
+  width: 710px;
   height: 140px;
   gap: 24px;
   background-image: url('../../img/bgImg.webp');
@@ -14,7 +14,7 @@
 }
 
 .infoWrap {
-  width: 250px;
+  width: 230px;
   display: flex;
   flex-direction: column;
 }
@@ -37,10 +37,6 @@
   border-left: 2px solid white;
 }
 
-.field::placeholder {
-  color: yellow;
-}
-
 .addBtn {
   text-transform: uppercase;
   height: 40px;
@@ -54,7 +50,4 @@
   color: red;
 }
 
-/* .imgWrap {
-  width: 350px;
-  height: 350px;
-  /* background-image: url('../../img/girlContact.webp'); */
+

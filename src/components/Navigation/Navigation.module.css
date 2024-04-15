@@ -18,6 +18,10 @@
   padding: 2px 15px;
 }
 
+.link:hover {
+    color: yellow;
+}
+
 .active {
   color: #ffff00;
   font-weight: bold;
