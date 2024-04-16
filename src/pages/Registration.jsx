@@ -2,7 +2,7 @@ import DocumentTitle from '../components/DocumentTitle';
 
 import { useDispatch } from 'react-redux';
 import { register } from '../redux/auth/operations';
-import RegisterForm from '../components/RegisterForm/RegisterForm';
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm';
 
 const styles = {
   container: {
@@ -25,7 +25,7 @@ export default function Register() {
   return (
     <div style={styles.container}>
       <DocumentTitle>Registration</DocumentTitle>
-          <RegisterForm onRegister={ onRegister} />
+          <RegistrationForm onRegister={ onRegister} />
     </div>
   );
 }
